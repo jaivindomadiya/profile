@@ -24,11 +24,11 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-green-600/95 backdrop-blur-sm border-b border-yellow-400/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[hsl(0,0%,6%)]/95 backdrop-blur-sm border-b border-portfolio-highlight/20">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="text-yellow-400 font-bold text-xl">
+          <div className="text-portfolio-highlight font-bold text-xl">
             Portfolio
           </div>
 
@@ -38,7 +38,7 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-white hover:text-yellow-400 transition-colors font-medium"
+                className="text-white hover:text-portfolio-highlight transition-colors font-medium"
               >
                 {item.name}
               </button>
@@ -48,7 +48,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white hover:text-yellow-400 transition-colors"
+            className="md:hidden text-white hover:text-portfolio-highlight transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -56,13 +56,13 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-yellow-400/20">
+          <div className="md:hidden py-4 border-t border-portfolio-highlight/20">
             <div className="flex flex-col space-y-2">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-white hover:text-yellow-400 transition-colors font-medium py-2 text-left"
+                  className="text-white hover:text-portfolio-highlight transition-colors font-medium py-2 text-left"
                 >
                   {item.name}
                 </button>

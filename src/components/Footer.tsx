@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-8 px-4 border-t border-yellow-400/20">
+    <footer className="py-8 px-4 border-t border-portfolio-highlight/20">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white text-center md:text-left">
@@ -13,21 +13,21 @@ const Footer = () => {
           <div className="flex gap-4">
             <a 
               href="https://linkedin.com/in/yourprofile"
-              className="text-white hover:text-yellow-400 transition-colors"
+              className="text-white hover:text-portfolio-highlight transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
             </a>
             <a 
               href="https://github.com/yourusername"
-              className="text-white hover:text-yellow-400 transition-colors"
+              className="text-white hover:text-portfolio-highlight transition-colors"
               aria-label="GitHub"
             >
               <Github size={24} />
             </a>
             <a 
               href="mailto:your.email@example.com"
-              className="text-white hover:text-yellow-400 transition-colors"
+              className="text-white hover:text-portfolio-highlight transition-colors"
               aria-label="Email"
             >
               <Mail size={24} />

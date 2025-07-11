@@ -20,14 +20,14 @@ const Education = () => {
   return (
     <section id="education" className="py-16 px-4">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12">Education</h2>
+        <h2 className="text-4xl font-bold text-portfolio-highlight text-center mb-12">Education</h2>
         <div className="space-y-8">
           {education.map((edu, index) => (
             <div 
               key={index}
-              className="flex flex-col md:flex-row items-center gap-8 bg-green-800/30 rounded-lg p-8 border border-yellow-400/20 hover:border-yellow-400/40 transition-all duration-300"
+              className="flex flex-col md:flex-row items-center gap-8 bg-[hsl(0,0%,10%)]/30 rounded-lg p-8 border border-portfolio-highlight/20 hover:border-portfolio-highlight/40 transition-all duration-300"
             >
-              <div className="w-32 h-32 rounded-lg overflow-hidden border-2 border-yellow-400/30 flex-shrink-0">
+              <div className="w-32 h-32 rounded-lg overflow-hidden border-2 border-portfolio-highlight/30 flex-shrink-0">
                 <img 
                   src={edu.image} 
                   alt={edu.school}
@@ -35,9 +35,9 @@ const Education = () => {
                 />
               </div>
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl font-bold text-yellow-400 mb-2">{edu.degree}</h3>
+                <h3 className="text-2xl font-bold text-portfolio-highlight mb-2">{edu.degree}</h3>
                 <p className="text-white text-lg font-semibold mb-2">{edu.school}</p>
-                <p className="text-yellow-400 mb-2">{edu.duration}</p>
+                <p className="text-portfolio-highlight mb-2">{edu.duration}</p>
                 <p className="text-white">{edu.description}</p>
               </div>
             </div>

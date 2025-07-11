@@ -65,7 +65,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom portfolio colors
+				'portfolio-bg': 'hsl(0, 0%, 6%)',
+				'portfolio-text': 'hsl(0, 0%, 100%)',
+				'portfolio-highlight': 'hsl(70, 100%, 42%)',
+				'portfolio-accent': 'hsl(57, 100%, 50%)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

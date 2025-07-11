@@ -40,7 +40,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-16 px-4">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12">Projects</h2>
+        <h2 className="text-4xl font-bold text-portfolio-highlight text-center mb-12">Projects</h2>
         <div className="space-y-16">
           {projects.map((project, index) => (
             <div 
@@ -54,13 +54,13 @@ const Projects = () => {
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-64 lg:h-80 object-cover rounded-lg border-2 border-yellow-400/30 shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                  className="w-full h-64 lg:h-80 object-cover rounded-lg border-2 border-portfolio-highlight/30 shadow-lg hover:shadow-2xl transition-shadow duration-300"
                 />
               </div>
               
               {/* Project Content */}
               <div className="w-full lg:w-1/2 space-y-4">
-                <h3 className="text-2xl font-bold text-yellow-400">{project.title}</h3>
+                <h3 className="text-2xl font-bold text-portfolio-highlight">{project.title}</h3>
                 <p className="text-white text-lg leading-relaxed">{project.description}</p>
                 
                 {/* Tech Stack */}
@@ -68,7 +68,7 @@ const Projects = () => {
                   {project.techStack.map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="bg-yellow-400/20 text-yellow-400 px-3 py-1 rounded-full text-sm border border-yellow-400/30"
+                      className="bg-portfolio-highlight/20 text-portfolio-highlight px-3 py-1 rounded-full text-sm border border-portfolio-highlight/30"
                     >
                       {tech}
                     </span>
@@ -79,14 +79,14 @@ const Projects = () => {
                 <div className="flex gap-4">
                   <a 
                     href={project.github}
-                    className="flex items-center gap-2 bg-yellow-400 text-green-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
+                    className="flex items-center gap-2 bg-portfolio-highlight text-black px-4 py-2 rounded-lg font-semibold hover:bg-portfolio-accent transition-colors"
                   >
                     <Github size={20} />
                     Code
                   </a>
                   <a 
                     href={project.live}
-                    className="flex items-center gap-2 border-2 border-yellow-400 text-yellow-400 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 hover:text-green-900 transition-colors"
+                    className="flex items-center gap-2 border-2 border-portfolio-highlight text-portfolio-highlight px-4 py-2 rounded-lg font-semibold hover:bg-portfolio-highlight hover:text-black transition-colors"
                   >
                     <ExternalLink size={20} />
                     Live Demo

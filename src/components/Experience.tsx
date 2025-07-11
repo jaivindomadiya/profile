@@ -28,22 +28,22 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-16 px-4 bg-green-800/20">
+    <section id="experience" className="py-16 px-4 bg-[hsl(0,0%,10%)]/20">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-4xl font-bold text-yellow-400 text-center mb-12">Experience</h2>
+        <h2 className="text-4xl font-bold text-portfolio-highlight text-center mb-12">Experience</h2>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div 
               key={index}
-              className="bg-green-800/30 rounded-lg p-8 border border-yellow-400/20 hover:border-yellow-400/40 transition-all duration-300"
+              className="bg-[hsl(0,0%,10%)]/30 rounded-lg p-8 border border-portfolio-highlight/20 hover:border-portfolio-highlight/40 transition-all duration-300"
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-yellow-400">{exp.role}</h3>
+                  <h3 className="text-2xl font-bold text-portfolio-highlight">{exp.role}</h3>
                   <p className="text-white text-lg font-semibold">{exp.company}</p>
                 </div>
                 <div className="mt-2 md:mt-0 text-right">
-                  <span className="bg-yellow-400/20 text-yellow-400 px-3 py-1 rounded-full text-sm border border-yellow-400/30">
+                  <span className="bg-portfolio-highlight/20 text-portfolio-highlight px-3 py-1 rounded-full text-sm border border-portfolio-highlight/30">
                     {exp.type}
                   </span>
                   <p className="text-white mt-1">{exp.duration}</p>
@@ -52,7 +52,7 @@ const Experience = () => {
               <ul className="space-y-2">
                 {exp.responsibilities.map((responsibility, respIndex) => (
                   <li key={respIndex} className="text-white flex items-start">
-                    <span className="text-yellow-400 mr-2 mt-1">•</span>
+                    <span className="text-portfolio-highlight mr-2 mt-1">•</span>
                     {responsibility}
                   </li>
                 ))}
